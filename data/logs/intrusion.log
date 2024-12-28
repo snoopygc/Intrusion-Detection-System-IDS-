@@ -1,0 +1,2 @@
+ALERT: Pattern 'mobile.events.data.microsoft.com' detected (ID: 1)
+Rule matched: Request to mobile.events.data.microsoft.com (ID: 1)

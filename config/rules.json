@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "pattern": "mobile.events.data.microsoft.com",
+        "description": "Request to mobile.events.data.microsoft.com"
+    },
+    {
+        "id": 2,
+        "pattern": "malicious_payload",
+        "description": "Malicious payload detected"
+    }
+]
