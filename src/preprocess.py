@@ -1,9 +1,15 @@
-from scapy.all import Raw
+from scapy.all import TCP, IP
 
 def preprocess_packet(packet):
-    if packet.haslayer(Raw):  # ถ้ามี Raw Layer ในแพ็กเก็ต
-        payload = packet[Raw].load.decode('utf-8', errors='ignore')
-        print(f"Extracted Payload: {payload}")  # ให้แสดงผล Payload ที่ดึงออกมา
-        return {"payload": payload}
-    else:
-        return None
+    """
+    Preprocess packet to extract relevant data (payload).
+    """
+    if packet.haslayer(TCP):  # Check for TCP layer
+        # If the packet has a payload (data)
+        payload = str(packet[TCP].payload)
+        
+        # Debug: print what we extracted
+        print(f"Extracted Payload: {payload}")
+        
+        return payload
+    return None  # No payload if it's not a TCP packet with data

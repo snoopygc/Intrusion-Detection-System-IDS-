@@ -8,5 +8,95 @@
         "id": 2,
         "pattern": "malicious_payload",
         "description": "Malicious payload detected"
+    },
+    {
+        "id": 3,
+        "pattern": "cmd.exe",
+        "description": "Suspicious execution of cmd.exe"
+    },
+    {
+        "id": 4,
+        "pattern": "PowerShell",
+        "description": "Suspicious PowerShell execution detected"
+    },
+    {
+        "id": 5,
+        "pattern": "base64",
+        "description": "Potential data exfiltration via Base64 encoding detected"
+    },
+    {
+        "id": 6,
+        "pattern": "netstat -an",
+        "description": "Suspicious netstat activity (monitoring network connections)"
+    },
+    {
+        "id": 7,
+        "pattern": "dir /s",
+        "description": "Suspicious directory search for sensitive files"
+    },
+    {
+        "id": 8,
+        "pattern": "wget",
+        "description": "Use of wget to download files from an external server"
+    },
+    {
+        "id": 9,
+        "pattern": "htaccess",
+        "description": "Modification or creation of .htaccess files"
+    },
+    {
+        "id": 10,
+        "pattern": "ftp",
+        "description": "Potential FTP exfiltration or suspicious FTP connection"
+    },
+    {
+        "id": 11,
+        "pattern": "DROP TABLE",
+        "description": "SQL Injection attempt - DROP TABLE command"
+    },
+    {
+        "id": 12,
+        "pattern": "bin/bash",
+        "description": "Shellcode attempt detected - binary execution"
+    },
+    {
+        "id": 13,
+        "pattern": "nmap",
+        "description": "Network scanning activity using nmap tool"
+    },
+    {
+        "id": 14,
+        "pattern": "8080",
+        "description": "Suspicious traffic on port 8080 (could indicate a web proxy or proxy tool)"
+    },
+    {
+        "id": 15,
+        "pattern": "XSS",
+        "description": "Cross-Site Scripting (XSS) detected in payload"
+    },
+    {
+        "id": 16,
+        "pattern": "reverse shell",
+        "description": "Attempt to create a reverse shell connection"
+    },
+    {
+        "id": 17,
+        "pattern": "portscan",
+        "description": "Network port scanning detected"
+    },
+    {
+        "id": 18,
+        "pattern": "virus_signature",
+        "description": "Known malware signature detected"
+    },
+    {
+        "id": 19,
+        "pattern": "traceroute",
+        "description": "Traceroute tool usage detected"
+    },
+    {
+        "id": 20,
+        "pattern": "brute force",
+        "description": "Brute-force password attack detected"
     }
 ]
